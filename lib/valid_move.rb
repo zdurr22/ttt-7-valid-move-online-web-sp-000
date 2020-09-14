@@ -14,13 +14,13 @@ end
 board = [" "," "," "," "," "," "," "," "," "]
 
 def position_taken?(board, index)
-  if board[4] == " "
+  if board[index] == " "
     false
-  elsif board[4] == ""
+  elsif board[index] == ""
     false
-  elsif board[4] == nil
+  elsif board[index] == nil
     false
-  elsif board[4] == "X" || board[4] == "O"
+  elsif board[index] == "X" || board[4] == "O"
     true
   end
 end
