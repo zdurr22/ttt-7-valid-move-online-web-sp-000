@@ -7,7 +7,7 @@ def valid_move?(board, index)
   elsif position_taken?(board, index) == false || nil
     false
   elseif position_taken?(board, index) == true
-    true
+    false
   else
     true
   end
