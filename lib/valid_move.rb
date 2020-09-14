@@ -1,12 +1,13 @@
 board = [" "," "," "," "," "," "," "," "," "]
 # code your #valid_move? method here
 def valid_move?(board, index)
-  if index.between?(0, 8) == true
+  if position_taken? == true
+    false
+  elsif index.between?(0, 8) == true
     true
   elsif index.between?(0, 8) == false
     false
-  elsif position_taken? == true
-    false
+
   else
     false
   end
